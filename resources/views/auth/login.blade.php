@@ -75,6 +75,9 @@
                     <a href="/auth/linkedin" class="btn btn-block btn-linkedin btn-social">
                         <i class="fa fa-linkedin"></i>Sign in with LinkedIn
                     </a>
+                    <a href="/auth/bitbucket" class="btn btn-block btn-bitbucket btn-social">
+                        <i class="fa fa-bitbucket"></i>Sign in with Bitbucket
+                    </a>
                 </div>
             </div>
         </div>

@@ -58,6 +58,11 @@ return [
         'client_id'     => env('LINKEDIN_ID'),
         'client_secret' => env('LINKEDIN_SECRET'),
         'redirect'      => env('LINKEDIN_CALLBACK_URL')
+    ],
+    'bitbucket' => [
+        'client_id'     => env('BITBUCKET_ID'),
+        'client_secret' => env('BITBUCKET_SECRET'),
+        'redirect'      => env('BITBUCKET_CALLBACK_URL')
     ]
 
 ];
