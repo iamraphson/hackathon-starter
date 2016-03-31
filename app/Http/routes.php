@@ -107,6 +107,10 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => ['guest']
     ]);
 
+    Route::get('/account', function(){
+       return view('account.profile');
+    });
+
     Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
     Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
     Route::get('password/reset', 'Auth\PasswordController@getReset');
