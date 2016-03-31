@@ -78,6 +78,15 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => ['auth'],
         'uses' => 'TwitterController@sendTweet'
     ]);
+    Route::get('/account', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@index'
+    ]);
+
+    Route::post('/account/profile', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@updateProfile'
+    ]);
 
 
     Route::get('/login', [
@@ -107,9 +116,7 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => ['guest']
     ]);
 
-    Route::get('/account', function(){
-       return view('account.profile');
-    });
+
 
     Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
     Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');

@@ -18,7 +18,7 @@ class User extends Authenticatable{
      * @var array
      */
     protected $fillable = [
-        'email', 'password', 'name', 'gender', 'location', 'website', 'avatar'
+        'email', 'password', 'name', 'gender', 'location', 'website', 'avatar', 'username'
     ];
 
     /**
@@ -32,5 +32,16 @@ class User extends Authenticatable{
 
     public function userProfile(){
         return $this->hasMany('App\UserProfile', 'user_id');
+    }
+
+    /*
+     * Check if Avatar field is null
+     * @return model avatar
+     */
+    public function getAvatar(){
+        if(is_null($this->avatar))
+            return "http://www.gravatar.com/avatar/" . md5(strtolower(trim($this->email))) . "?d=mm&s=60";
+
+        return $this->avatar;
     }
 }

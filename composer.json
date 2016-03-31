@@ -10,7 +10,8 @@
         "laravel/socialite": "^2.0",
         "vinkla/facebook": "^2.0",
         "thujohn/twitter": "^2.1",
-        "socialiteproviders/instagram": "^1.1"
+        "socialiteproviders/instagram": "^1.1",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
