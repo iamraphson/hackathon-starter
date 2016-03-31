@@ -63,6 +63,11 @@ return [
         'client_id'     => env('BITBUCKET_ID'),
         'client_secret' => env('BITBUCKET_SECRET'),
         'redirect'      => env('BITBUCKET_CALLBACK_URL')
+    ],
+    'instagram' => [
+        'client_id'     => env('INSTAGRAM_ID'),
+        'client_secret' => env('INSTAGRAM_SECRET'),
+        'redirect'      => env('INSTAGRAM_CALLBACK_URL')
     ]
 
 ];

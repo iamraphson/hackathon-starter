@@ -78,6 +78,9 @@
                     <a href="/auth/bitbucket" class="btn btn-block btn-bitbucket btn-social">
                         <i class="fa fa-bitbucket"></i>Sign in with Bitbucket
                     </a>
+                    <a href="/auth/instagram" class="btn btn-block btn-instagram btn-social">
+                        <i class="fa fa-instagram"></i>Sign in with Instagram
+                    </a>
                 </div>
             </div>
         </div>
