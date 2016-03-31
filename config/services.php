@@ -53,6 +53,11 @@ return [
         'client_id'     => env('GITHUB_ID'),
         'client_secret' => env('GITHUB_SECRET'),
         'redirect'      => env('GITHUB_CALLBACK_URL')
+    ],
+    'linkedin' => [
+        'client_id'     => env('LINKEDIN_ID'),
+        'client_secret' => env('LINKEDIN_SECRET'),
+        'redirect'      => env('LINKEDIN_CALLBACK_URL')
     ]
 
 ];

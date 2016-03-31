@@ -72,6 +72,9 @@
                     <a href="/auth/github" class="btn btn-block btn-github btn-social">
                         <i class="fa fa-github"></i>Sign in with GitHub
                     </a>
+                    <a href="/auth/linkedin" class="btn btn-block btn-linkedin btn-social">
+                        <i class="fa fa-linkedin"></i>Sign in with LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
