@@ -37,4 +37,18 @@ class AccountController extends Controller{
 
         return redirect()->back()->with('info', 'Your Profile has been updated successfully');
     }
+
+    public function changePassword(Request $request){
+        $this->validate($request, [
+            'password'     => 'required|min:4|confirmed',
+            'password_confirmation'   => 'required|min:4'
+        ]);
+
+        $user = User::find($this->loginId);
+        $user->password = bcrypt($request->input('password'));
+        $user->save();
+
+        return redirect()->back()->with('info', 'Password has been changed successfully');
+
+    }
 }

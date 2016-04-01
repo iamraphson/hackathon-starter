@@ -88,6 +88,13 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'AccountController@updateProfile'
     ]);
 
+    Route::post('/account/password', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@changePassword'
+    ]);
+
+
+
 
     Route::get('/login', [
         'uses' => 'Auth\AuthController@getLogin',
