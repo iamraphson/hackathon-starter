@@ -20,8 +20,11 @@ class AccountController extends Controller{
 
     public function index(){
         $accountDetails = User::find($this->loginId);
-        time();
-        return view('account.profile')->withAccount($accountDetails);
+        $linkedAccount = array();
+        foreach($accountDetails->userProfile as $profile){
+            array_push($linkedAccount, strtolower($profile->provider));
+        }
+        return view('account.profile')->withAccount($accountDetails)->with("linkedAccount",$linkedAccount);
     }
 
     public function updateProfile(Request $request){

@@ -91,7 +91,9 @@ class AuthController extends Controller
 
         if(Auth::user()){
             $this->updateUserProfile($user, $provider);
-            return redirect(Session::get('oldPath'));
+            $redirectPath = Session::has('oldPath') ? Session::get('oldPath') : "/account";
+            Session::forget('oldPath');
+            return redirect($redirectPath);
         } else {
             $authUser = $this->findOrCreateUser($user, $provider);
             Auth::login($authUser);

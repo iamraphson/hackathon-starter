@@ -130,7 +130,62 @@
                         </div>
                     </div>
                 </form>
+                <div class="page-header">
+                    <h3>Linked Accounts</h3>
+                </div>
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Instagram link/unlink --}}
+                            @if(in_array("instagram", $linkedAccount))
+                                <p><a href="{{ url('account/unlink/instagram') }}" class="text-danger">Unlink your Instagram account</a></p>
+                            @else
+                               <p><a href="{{ url('/auth/instagram') }}">Link your Instagram account</a></p>
+                            @endif
+                        </div>
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Google link/unlink --}}
+                            @if(in_array("google", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/google') }}" class="text-danger">Unlink your Google account</a></p>
+                            @else
+                                <p><a href="{{ url('/auth/google') }}">Link your Google account</a></p>
+                            @endif
+                        </div>
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Facebook link/unlink --}}
+                            @if(in_array("facebook", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/facebook') }}" class="text-danger">Unlink your Facebook account</a></p>
+                            @else
+                                <p><a href="{{ url('/auth/facebook') }}">Link your Facebook account</a></p>
+                            @endif
+                        </div>
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Twitter link/unlink --}}
+                            @if(in_array("twitter", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/twitter') }}" class="text-danger">Unlink your Twitter account</a></p>
+                            @else
+                                <p><a href="{{ url('/auth/twitter') }}">Link your Twitter account</a></p>
+                            @endif
+                        </div>
 
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Github link/unlink --}}
+                            @if(in_array("github", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/github') }}" class="text-danger">Unlink your GitHub account</a></p>
+                            @else
+                                <p><a href="{{ url('/auth/github') }}">Link your GitHub account</a></p>
+                            @endif
+                        </div>
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Github link/unlink --}}
+                            @if(in_array("linkedin", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/linkedin') }}" class="text-danger">Unlink your LinkedIn account</a></p>
+                            @else
+                                <p><a href="{{ url('/auth/linkedin') }}">Link your LinkedIn account</a></p>
+                            @endif
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
