@@ -57,8 +57,7 @@ class AccountController extends Controller{
     }
 
     /*
-     * 2 options of avatar upload is provided here
-     * Either avatar is stored on local application storage or stored on cloudinary(https://www.cloudinary.com)
+     * Avatar upload using cloudinary(https://www.cloudinary.com)
      */
     public function uploadAvatar(Request $request){
         $this->validate($request, [
@@ -77,19 +76,5 @@ class AccountController extends Controller{
         $user->save();
 
         return redirect()->back()->with('info', 'Photo has been updated successfully');
-    }
-
-    /*
-     * Handles avatar to be stored locally
-     */
-    private function storeAvatarLocally($file){
-        $filePath = $this->formFilePath($file);
-        Storage::put($filePath,  File::get($file));
-
-        return $filePath;
-    }
-
-    private function formFilePath($file){
-        return time().'-' . rand(0, 999). '/' . $file->getClientOriginalName();
     }
 }
