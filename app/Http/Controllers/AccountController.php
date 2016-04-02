@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Cloudder;
+use Session;
 use App\Http\Requests;
 use App\User;
 use App\UserProfile;
@@ -83,5 +84,12 @@ class AccountController extends Controller{
     public function unlinkSocialMediaAccount($provider){
         UserProfile::whereProvider($provider)->where('user_id', '=', Auth::user()->id)->delete();
         return redirect()->back()->with('info', 'Account has been unlinked');
+    }
+
+    public function deleteAccount(Request $request){
+        User::find($this->loginId)->delete();
+        Session::flush();
+        Auth::logout();
+        return redirect('/');
     }
 }

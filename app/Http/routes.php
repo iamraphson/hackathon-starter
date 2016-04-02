@@ -102,6 +102,11 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'AccountController@unlinkSocialMediaAccount'
     ]);
 
+    Route::get('/account/delete', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@deleteAccount'
+    ]);
+
 
 
 

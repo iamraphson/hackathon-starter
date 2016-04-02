@@ -138,7 +138,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Instagram link/unlink --}}
                             @if(in_array("instagram", $linkedAccount))
-                                <p><a href="{{ url('account/unlink/instagram') }}" class="text-danger">Unlink your Instagram account</a></p>
+                                <p><a href="{{ url('account/unlink/instagram') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your Instagram account</a></p>
                             @else
                                <p><a href="{{ url('/auth/instagram') }}">Link your Instagram account</a></p>
                             @endif
@@ -146,7 +146,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Google link/unlink --}}
                             @if(in_array("google", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/google') }}" class="text-danger">Unlink your Google account</a></p>
+                                <p><a href="{{ url('/account/unlink/google') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your Google account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/google') }}">Link your Google account</a></p>
                             @endif
@@ -154,7 +154,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Facebook link/unlink --}}
                             @if(in_array("facebook", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/facebook') }}" class="text-danger">Unlink your Facebook account</a></p>
+                                <p><a href="{{ url('/account/unlink/facebook') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your Facebook account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/facebook') }}">Link your Facebook account</a></p>
                             @endif
@@ -162,7 +162,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Twitter link/unlink --}}
                             @if(in_array("twitter", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/twitter') }}" class="text-danger">Unlink your Twitter account</a></p>
+                                <p><a href="{{ url('/account/unlink/twitter') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your Twitter account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/twitter') }}">Link your Twitter account</a></p>
                             @endif
@@ -171,7 +171,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Github link/unlink --}}
                             @if(in_array("github", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/github') }}" class="text-danger">Unlink your GitHub account</a></p>
+                                <p><a href="{{ url('/account/unlink/github') }}" class="text-danger"> onclick="return confirm('Are you sure,you want to unlink your Account')"Unlink your GitHub account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/github') }}">Link your GitHub account</a></p>
                             @endif
@@ -185,6 +185,16 @@
                             @endif
                         </div>
                     </div>
+                </div>
+                <div class="page-header">
+                    <h3>Delete Account</h3>
+                </div>
+                <p class="col-sm-offset-3 col-sm-6">You can delete your account, but keep in mind this action is irreversible.</p>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <a href="{{ url('/account/delete') }}" class="btn btn-danger"
+                       onclick="return confirm('Are you sure,you want to delete your Account')">
+                        <i class="fa fa-trash"></i> Delete my account
+                    </a>
                 </div>
             </div>
         </div>
