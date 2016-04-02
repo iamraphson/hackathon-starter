@@ -97,6 +97,12 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'AccountController@uploadAvatar'
     ]);
 
+    Route::get('/account/unlink/{provider}', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@unlinkSocialMediaAccount'
+    ]);
+
+
 
 
     Route::get('/login', [

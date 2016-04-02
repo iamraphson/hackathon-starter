@@ -7,8 +7,7 @@ use Auth;
 use Cloudder;
 use App\Http\Requests;
 use App\User;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\File;
+use App\UserProfile;
 
 class AccountController extends Controller{
 
@@ -79,5 +78,10 @@ class AccountController extends Controller{
         $user->save();
 
         return redirect()->back()->with('info', 'Photo has been updated successfully');
+    }
+
+    public function unlinkSocialMediaAccount($provider){
+        UserProfile::whereProvider($provider)->where('user_id', '=', Auth::user()->id)->delete();
+        return redirect()->back()->with('info', 'Account has been unlinked');
     }
 }
