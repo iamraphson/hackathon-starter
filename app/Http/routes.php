@@ -138,6 +138,13 @@ Route::group(['middleware' => 'web'], function () {
     ]);
 
 
+    Route::get('/contact', [
+        'uses' => 'ContactController@index'
+    ]);
+
+    Route::post('/contact', [
+        'uses' => 'ContactController@sendMessage'
+    ]);
 
     Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
     Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');

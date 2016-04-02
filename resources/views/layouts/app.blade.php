@@ -49,8 +49,9 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/api') }}">API Examples</a></li>
+                    <li><a href="{{ url('/home') }}">HOME</a></li>
+                    <li><a href="{{ url('/api') }}">API EXAMPLES</a></li>
+                    <li><a href="{{ url('/contact') }}">CONTACT</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
