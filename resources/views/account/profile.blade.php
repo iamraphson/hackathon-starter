@@ -179,7 +179,7 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Github link/unlink --}}
                             @if(in_array("linkedin", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/linkedin') }}" class="text-danger">Unlink your LinkedIn account</a></p>
+                                <p><a href="{{ url('/account/unlink/linkedin') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your LinkedIn account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/linkedin') }}">Link your LinkedIn account</a></p>
                             @endif
