@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use Cloudder;
 use App\Http\Requests;
 use App\User;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class AccountController extends Controller{
 
@@ -17,6 +20,7 @@ class AccountController extends Controller{
 
     public function index(){
         $accountDetails = User::find($this->loginId);
+        time();
         return view('account.profile')->withAccount($accountDetails);
     }
 
@@ -50,5 +54,42 @@ class AccountController extends Controller{
 
         return redirect()->back()->with('info', 'Password has been changed successfully');
 
+    }
+
+    /*
+     * 2 options of avatar upload is provided here
+     * Either avatar is stored on local application storage or stored on cloudinary(https://www.cloudinary.com)
+     */
+    public function uploadAvatar(Request $request){
+        $this->validate($request, [
+            'file_name'     => 'required|mimes:jpg,jpeg,bmp,png|between:1,7000',
+        ]);
+
+        $file = $request->file('file_name')->getRealPath();
+
+        Cloudder::upload($file, null);
+        list($width, $height) = getimagesize($file);
+        $fileUrl = Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height" => $height]);
+
+        //store File URL to DB
+        $user = User::find($this->loginId);
+        $user->avatar = $fileUrl;
+        $user->save();
+
+        return redirect()->back()->with('info', 'Photo has been updated successfully');
+    }
+
+    /*
+     * Handles avatar to be stored locally
+     */
+    private function storeAvatarLocally($file){
+        $filePath = $this->formFilePath($file);
+        Storage::put($filePath,  File::get($file));
+
+        return $filePath;
+    }
+
+    private function formFilePath($file){
+        return time().'-' . rand(0, 999). '/' . $file->getClientOriginalName();
     }
 }

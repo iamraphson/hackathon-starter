@@ -92,7 +92,10 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => ['auth'],
         'uses' => 'AccountController@changePassword'
     ]);
-
+    Route::post('/account/photo', [
+        'middleware' => ['auth'],
+        'uses' => 'AccountController@uploadAvatar'
+    ]);
 
 
 

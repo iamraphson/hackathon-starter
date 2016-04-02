@@ -159,6 +159,7 @@ return [
         Vinkla\Facebook\FacebookServiceProvider::class,
         Thujohn\Twitter\TwitterServiceProvider::class,
         SocialiteProviders\Manager\ServiceProvider::class,
+        JD\Cloudder\CloudderServiceProvider::class,
     ],
 
     /*
@@ -207,6 +208,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Facebook' => Vinkla\Facebook\Facades\Facebook::class,
         'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
+        'Cloudder' => JD\Cloudder\Facades\Cloudder::class
 
     ],
 

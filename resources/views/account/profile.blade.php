@@ -74,6 +74,30 @@
                     </div>
                 </form>
                 <div class="page-header">
+                    <h3>Manage Your Avatar Here</h3>
+                </div>
+                <form role="form" method="POST" action="{{ url('account/photo') }}" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="gravatar" class="col-sm-2 control-label">Gravatar</label>
+                        <div class="col-sm-4">
+                            <img src="{!! $account->getAvatar() !!}" width="100" height="100" class="profile">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gravatar" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-4">
+                            <input type="file" name="file_name" id="file_name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-pencil"></i> Change Avatar</button>
+                        </div>
+                    </div>
+                    {!! csrf_field() !!}
+                </form>
+
+                <div class="page-header">
                     <h3>Change Password</h3>
                 </div>
                 <form action="/account/password" method="POST" class="form-horizontal">
