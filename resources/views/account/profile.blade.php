@@ -171,17 +171,25 @@
                         <div class="col-sm-offset-3 col-sm-4">
                             {{--Handles Github link/unlink --}}
                             @if(in_array("github", $linkedAccount))
-                                <p><a href="{{ url('/account/unlink/github') }}" class="text-danger"> onclick="return confirm('Are you sure,you want to unlink your Account')"Unlink your GitHub account</a></p>
+                                <p><a href="{{ url('/account/unlink/github') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')"Unlink your GitHub account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/github') }}">Link your GitHub account</a></p>
                             @endif
                         </div>
                         <div class="col-sm-offset-3 col-sm-4">
-                            {{--Handles Github link/unlink --}}
+                            {{--Handles LinkedIn link/unlink --}}
                             @if(in_array("linkedin", $linkedAccount))
                                 <p><a href="{{ url('/account/unlink/linkedin') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')">Unlink your LinkedIn account</a></p>
                             @else
                                 <p><a href="{{ url('/auth/linkedin') }}">Link your LinkedIn account</a></p>
+                            @endif
+                        </div>
+                        <div class="col-sm-offset-3 col-sm-4">
+                            {{--Handles Foursquare link/unlink --}}
+                            @if(in_array("foursquare", $linkedAccount))
+                                <p><a href="{{ url('/account/unlink/Foursquare') }}" class="text-danger" onclick="return confirm('Are you sure,you want to unlink your Account')"> Unlink your Foursquare account </a></p>
+                            @else
+                                <p><a href="{{ url('/auth/Foursquare') }}">Link your Foursquare account</a></p>
                             @endif
                         </div>
                     </div>
