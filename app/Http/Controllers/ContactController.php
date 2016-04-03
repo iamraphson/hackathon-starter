@@ -24,8 +24,8 @@ class ContactController extends Controller{
         $message = $request->input('message');
 
         Mail::send('mail.contactTemplate', ['body' => $message], function ($message) use ($name, $email) {
-            $message->from("iamraphson@hackathonstarter.com", "From: {$name}");
-            $message->to("nsegun5@gmail.com")->subject("Message From Hackathon Starter Contact Form");
+            $message->from("noreply@hackathonstarter.com", $name);
+            $message->to("nsegun5@gmail.com")->subject("Message From Hackathon Starter Contact Form - " . $email);
         });
 
         return redirect('contact')->with('info','Your Message has been sent successfully');
