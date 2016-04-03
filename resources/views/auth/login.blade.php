@@ -81,6 +81,9 @@
                     <a href="/auth/instagram" class="btn btn-block btn-instagram btn-social">
                         <i class="fa fa-instagram"></i>Sign in with Instagram
                     </a>
+                    <a href="/auth/foursquare" class="btn btn-block btn-foursquare btn-social">
+                        <i class="fa fa-foursquare"></i>Sign in with Foursquare
+                    </a>
                 </div>
             </div>
         </div>
