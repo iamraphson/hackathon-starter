@@ -155,11 +155,13 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        //Laravel\Socialite\SocialiteServiceProvider::class,
         Vinkla\Facebook\FacebookServiceProvider::class,
         Thujohn\Twitter\TwitterServiceProvider::class,
         SocialiteProviders\Manager\ServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
+        GrahamCampbell\GitHub\GitHubServiceProvider::class,
+
+        //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
     /*
@@ -208,7 +210,8 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Facebook' => Vinkla\Facebook\Facades\Facebook::class,
         'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
-        'Cloudder' => JD\Cloudder\Facades\Cloudder::class
+        'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
+        'GitHub' => GrahamCampbell\GitHub\Facades\GitHub::class,
 
     ],
 

@@ -72,6 +72,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'TwitterController@index'
         ]);
+
+        Route::get('/github', [
+            'middleware' => ['auth'],
+            'uses' => 'GithubController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[
