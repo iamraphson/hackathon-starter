@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "155f7bd63f65c84954031e26a38104ce",
-    "content-hash": "4a8ea5db843b3d8355744f5e896a7c9f",
+    "hash": "fb9f4a59596701fb0cf092b4d4fe5932",
+    "content-hash": "08faecdc7ec164458cb8a1b47bbab0ff",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1056,6 +1056,33 @@
             "time": "2016-02-18 21:54:00"
         },
         {
+            "name": "hownowstephen/php-foursquare",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hownowstephen/php-foursquare.git",
+                "reference": "f2f6d3656556bf3575f8beca5dd44109c999b5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hownowstephen/php-foursquare/zipball/f2f6d3656556bf3575f8beca5dd44109c999b5a0",
+                "reference": "f2f6d3656556bf3575f8beca5dd44109c999b5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "FoursquareApi": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A simple PHP library for accessing the foursquare API (see: https://developer.foursquare.com)",
+            "time": "2015-06-08 14:19:23"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -2067,6 +2094,43 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
+        },
+        {
+            "name": "socialiteproviders/foursquare",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Foursquare.git",
+                "reference": "4309f912183124e4b2148dfb496c08d16354b648"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Foursquare/zipball/4309f912183124e4b2148dfb496c08d16354b648",
+                "reference": "4309f912183124e4b2148dfb496c08d16354b648",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "socialiteproviders/manager": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Foursquare\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "DraperStudio",
+                    "email": "hello@draperstud.io"
+                }
+            ],
+            "description": "Foursquare OAuth2 Provider for Laravel Socialite",
+            "time": "2015-10-14 13:29:59"
         },
         {
             "name": "socialiteproviders/instagram",

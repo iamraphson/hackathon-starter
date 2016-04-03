@@ -28,6 +28,15 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4">
+                <a href="/api/foursquare" style="color: #fff">
+                    <div style="background-color: #1cafec" class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="http://i.imgur.com/PixH9li.png" height="40"> Foursquare
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection

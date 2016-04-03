@@ -77,6 +77,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'GithubController@index'
         ]);
+
+        Route::get('/foursquare', [
+            'middleware' => ['auth'],
+            'uses' => 'FoursquareController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[

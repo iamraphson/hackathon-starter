@@ -14,7 +14,9 @@
         "doctrine/dbal": "^2.5",
         "jrm2k6/cloudder": "^0.2.2",
         "guzzlehttp/guzzle": "^6.2",
-        "graham-campbell/github": "^4.2"
+        "graham-campbell/github": "^4.2",
+        "hownowstephen/php-foursquare": "1.2.*",
+        "socialiteproviders/foursquare": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
