@@ -87,6 +87,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'InstagramController@index'
         ]);
+
+        Route::get('/linkedin', [
+            'middleware' => ['auth'],
+            'uses' => 'LinkedinController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[

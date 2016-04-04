@@ -44,7 +44,13 @@
                     </div>
                 </a>
             </div>
-
+            <div class="col-sm-4">
+                <a href="/api/linkedin" style="color: #fff">
+                    <div style="background-color: #007bb6" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/sYmVWAw.png" height="40"> LinkedIn</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection
