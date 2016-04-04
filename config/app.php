@@ -160,7 +160,6 @@ return [
         SocialiteProviders\Manager\ServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
-
         //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 

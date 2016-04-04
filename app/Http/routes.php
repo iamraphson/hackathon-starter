@@ -82,6 +82,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'FoursquareController@index'
         ]);
+
+        Route::get('/instagram', [
+            'middleware' => ['auth'],
+            'uses' => 'InstagramController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[

@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
+        "laravel/framework": "5.2.27",
         "laravel/socialite": "^2.0",
         "vinkla/facebook": "^2.0",
         "thujohn/twitter": "^2.1",
@@ -16,7 +16,8 @@
         "guzzlehttp/guzzle": "^6.2",
         "graham-campbell/github": "^4.2",
         "hownowstephen/php-foursquare": "1.2.*",
-        "socialiteproviders/foursquare": "^1.1"
+        "socialiteproviders/foursquare": "^1.1",
+        "vinkla/instagram": "^4.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
