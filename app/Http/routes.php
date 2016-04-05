@@ -91,6 +91,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'LinkedinController@index'
         ]);
+
+        Route::get('/lastfm', [
+            'middleware' => ['auth'],
+            'uses' => 'LastFmController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[

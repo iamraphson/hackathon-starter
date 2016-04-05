@@ -21,6 +21,10 @@
             "install-path": "vendor/container-interop/container-interop",
             "installer": "composer"
         },
+        "dandelionmood/lastfm": {
+            "install-path": "vendor/dandelionmood/lastfm",
+            "installer": "composer"
+        },
         "dnoegel/php-xdg-base-dir": {
             "install-path": "vendor/dnoegel/php-xdg-base-dir",
             "installer": "composer"
@@ -142,6 +146,10 @@
         },
         "knplabs/github-api": {
             "install-path": "vendor/knplabs/github-api",
+            "installer": "composer"
+        },
+        "kriswallsmith/buzz": {
+            "install-path": "vendor/kriswallsmith/buzz",
             "installer": "composer"
         },
         "larabros/elogram": {
