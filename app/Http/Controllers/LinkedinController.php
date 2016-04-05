@@ -23,7 +23,6 @@ class LinkedinController extends Controller{
         } else {
             $this->linkedIn->setAccessToken($tokenData->oauth_token);
             $linkedinUser = $this->getData();
-            print_r($linkedinUser);
             return view('api.linkedin')->withUser($linkedinUser);
         }
 

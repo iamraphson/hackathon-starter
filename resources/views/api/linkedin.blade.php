@@ -25,7 +25,8 @@
             <div class="well well-sm">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="col-sm-2"><br><img src="" class="thumbnail"></div>
+                        <div class="col-sm-2"><br><img
+                                    src="{{ isset($user['pictureUrl']) ?  $user['pictureUrl'] : '' }}" class="thumbnail"></div>
                         <div class="col-sm-10">
                             <h3>{{ $user['firstName'] }} {{ $user['lastName'] }}</h3>
                             <h4>{{ $user['positions']['values'][0]['title'] }} at {{ $user['positions']['values'][0]['company']['name'] }}</h4>
