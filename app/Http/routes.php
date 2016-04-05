@@ -25,7 +25,6 @@ Route::get('customer_name', function(){
 Route::get('orders', function(){
     $orders = App\Order::all();
     foreach($orders as $order){
-        $customer = App\Customer::find($order->customer_id);
         echo $order->name . "Ordered By " . $order->customer->name . "<br/>";
     }
 });
