@@ -51,11 +51,17 @@
                     </div>
                 </a>
             </div>
-
             <div class="col-sm-4">
                 <a href="/api/linkedin" style="color: #fff">
                     <div style="background-color: #007bb6" class="panel panel-default">
                         <div class="panel-body"><img src="http://i.imgur.com/sYmVWAw.png" height="40"> LinkedIn</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="/api/nyt" style="color: #fff">
+                    <div style="background-color: #454442" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/e3sjmYj.png" height="40"> New York Times</div>
                     </div>
                 </a>
             </div>

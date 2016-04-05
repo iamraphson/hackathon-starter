@@ -96,6 +96,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'LastFmController@index'
         ]);
+
+        Route::get('/nyt', [
+            'middleware' => ['auth'],
+            'uses' => 'NewYorkTimesController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[
