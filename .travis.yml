@@ -5,11 +5,17 @@ php:
   - 7.0
   - hhvm
 
-before_script:
-  - composer self-update
-  - composer install --prefer-source --no-interaction --dev
+install: travis_retry composer install --no-interaction --prefer-source
 
-script: vendor/bin/phpunit
+script:
+  - phpunit --coverage-text --coverage-clover=coverage.clover
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+matrix:
+  fast_finish: true
 
 notifications:
   slack: red-creek:bXLrIwXudNv0Jpi7pDtvjmNM
