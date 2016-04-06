@@ -31,7 +31,9 @@
                     @foreach($posts['response']->posts as $post)
                         <li class="media">
                             <div class="media-body">
-                                <strong class="media-heading"><a target="_blank" href="{{ $post->post_url }}">{!! $post->slug !!} </a></strong>
+                                <strong class="media-heading">
+                                    <a target="_blank" href="{{ $post->post_url }}">{!! $post->slug !!} </a>
+                                </strong>
                                 <span class="text-muted">{!!  isset($post->caption) ? $post->caption : '' !!}</span>
                                 <span class="text-muted"> {{ $post->date }}</span>
                                 <p>{!! $post->summary !!}</p>
