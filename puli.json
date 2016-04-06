@@ -124,6 +124,10 @@
             "install-path": "vendor/ircmaxell/security-lib",
             "installer": "composer"
         },
+        "jaapz/tumblr": {
+            "install-path": "vendor/jaapz/tumblr",
+            "installer": "composer"
+        },
         "jakeasmith/http_build_url": {
             "install-path": "vendor/jakeasmith/http_build_url",
             "installer": "composer"

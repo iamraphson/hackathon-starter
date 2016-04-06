@@ -119,6 +119,7 @@ class GeneratedPuliFactory
             'hownowstephen/php-foursquare',
             'ircmaxell/random-lib',
             'ircmaxell/security-lib',
+            'jaapz/tumblr',
             'jakeasmith/http_build_url',
             'jakub-onderka/php-console-color',
             'jakub-onderka/php-console-highlighter',

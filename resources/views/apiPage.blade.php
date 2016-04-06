@@ -79,7 +79,15 @@
                     </div>
                 </a>
             </div>
-
+            <div class="col-sm-4">
+                <a href="/api/tumblr" style="color: #fff">
+                    <div style="background-color: #304e6c" class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="http://i.imgur.com/rZGQShS.png" height="40"> Tumblr
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection

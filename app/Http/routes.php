@@ -124,6 +124,11 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'PayPalController@getCancel'
         ]);
+
+        Route::get('/tumblr', [
+            'middleware' => ['auth'],
+            'uses' => 'TumblrController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[

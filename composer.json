@@ -26,7 +26,8 @@
         "puli/url-generator": "^1.0-beta4",
         "dandelionmood/lastfm": "^0.6.0",
         "laravel/cashier": "^6.0",
-        "netshell/paypal": "dev-master"
+        "netshell/paypal": "dev-master",
+        "jaapz/tumblr": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -66,5 +67,7 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
