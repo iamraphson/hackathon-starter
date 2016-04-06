@@ -67,6 +67,7 @@ class PayPalController extends Controller{
         $paymentExecution->setPayerId($payer_id);
         $executePayment = $payment->execute($paymentExecution, $this->_apiContext);
 
+        //Clear Cart, Send Notification and start delivery process..
 
         return view('api.paypal')->withStatus(0);
     }
