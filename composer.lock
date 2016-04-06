@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fad0bd4be72d559c4835d3391173c85",
-    "content-hash": "0b5cab0f34b4ca2ae52f25d5a4220305",
+    "hash": "1ba18e19ddc900b68fa92247d4d67c70",
+    "content-hash": "7575c57635326f023bc15ebed5af636d",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2674,6 +2674,49 @@
             "time": "2015-11-04 20:07:17"
         },
         {
+            "name": "netshell/paypal",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/net-shell/laravel-paypal.git",
+                "reference": "5ae43645f78a26c6dc06f48478952abca21026e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/net-shell/laravel-paypal/zipball/5ae43645f78a26c6dc06f48478952abca21026e4",
+                "reference": "5ae43645f78a26c6dc06f48478952abca21026e4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "illuminate/support": "~5.0",
+                "paypal/rest-api-sdk-php": "1.3.2",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Netshell\\Paypal": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Boyan Balkanski",
+                    "email": "balkanski@outlook.com"
+                }
+            ],
+            "description": "Laravel-Paypal is simple package help you process direct credit card payments, stored credit card payments and PayPal account payments with your Laravel 5 projects using paypal REST API SDK.",
+            "time": "2015-09-03 08:32:58"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v2.0.1",
             "source": {
@@ -2771,6 +2814,54 @@
                 "random"
             ],
             "time": "2016-03-18 20:34:03"
+        },
+        {
+            "name": "paypal/rest-api-sdk-php",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
+                "reference": "0a32a6323c829e0e424e9f4d15e7b346c8472c08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/0a32a6323c829e0e424e9f4d15e7b346c8472c08",
+                "reference": "0a32a6323c829e0e424e9f4d15e7b346c8472c08",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PayPal": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "PayPal",
+                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
+                }
+            ],
+            "description": "PayPal's PHP SDK for REST APIs",
+            "homepage": "https://github.com/paypal/rest-api-sdk-php",
+            "keywords": [
+                "payments",
+                "paypal",
+                "rest",
+                "sdk"
+            ],
+            "time": "2015-03-18 20:40:42"
         },
         {
             "name": "phenx/php-font-lib",
@@ -6433,7 +6524,8 @@
         "puli/composer-plugin": 10,
         "puli/repository": 10,
         "puli/discovery": 10,
-        "puli/url-generator": 10
+        "puli/url-generator": 10,
+        "netshell/paypal": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

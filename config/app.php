@@ -160,6 +160,7 @@ return [
         SocialiteProviders\Manager\ServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
+        Netshell\Paypal\PaypalServiceProvider::class
         //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
@@ -211,6 +212,7 @@ return [
         'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'GitHub' => GrahamCampbell\GitHub\Facades\GitHub::class,
+        'Paypal' => Netshell\Paypal\Facades\Paypal::class
 
     ],
 

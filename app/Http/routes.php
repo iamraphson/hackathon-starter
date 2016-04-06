@@ -105,6 +105,25 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'StripeController@index'
         ]);
+        Route::get('/paypal', [
+            'middleware' => ['auth'],
+            'uses' => 'PayPalController@index'
+        ]);
+
+        Route::get('/paypal/checkout', [
+            'middleware' => ['auth'],
+            'uses' => 'PayPalController@getCheckout'
+        ]);
+
+        Route::get('/paypal/done', [
+            'middleware' => ['auth'],
+            'uses' => 'PayPalController@getDone'
+        ]);
+
+        Route::get('/paypal/cancel', [
+            'middleware' => ['auth'],
+            'uses' => 'PayPalController@getCancel'
+        ]);
     });
 
     Route::post('newtweet/send',[

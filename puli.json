@@ -209,12 +209,20 @@
             "install-path": "vendor/nesbot/carbon",
             "installer": "composer"
         },
+        "netshell/paypal": {
+            "install-path": "vendor/netshell/paypal",
+            "installer": "composer"
+        },
         "nikic/php-parser": {
             "install-path": "vendor/nikic/php-parser",
             "installer": "composer"
         },
         "paragonie/random_compat": {
             "install-path": "vendor/paragonie/random_compat",
+            "installer": "composer"
+        },
+        "paypal/rest-api-sdk-php": {
+            "install-path": "vendor/paypal/rest-api-sdk-php",
             "installer": "composer"
         },
         "phenx/php-font-lib": {

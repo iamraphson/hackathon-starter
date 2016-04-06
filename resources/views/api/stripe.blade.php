@@ -26,7 +26,7 @@
             <form action="" method="POST">
                 <script
                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_test_4Swy4cjpVU0ycm8hV6gITn0S"
+                        data-key="{!! env('STRIPE_ID') !!}"
                         data-amount="2000"
                         data-name="Hackathon Starter"
                         data-description="2 widgets ($20.00)"
