@@ -62,6 +62,10 @@
             "install-path": "vendor/doctrine/lexer",
             "installer": "composer"
         },
+        "dompdf/dompdf": {
+            "install-path": "vendor/dompdf/dompdf",
+            "installer": "composer"
+        },
         "facebook/php-sdk-v4": {
             "install-path": "vendor/facebook/php-sdk-v4",
             "installer": "composer"
@@ -156,6 +160,10 @@
             "install-path": "vendor/larabros/elogram",
             "installer": "composer"
         },
+        "laravel/cashier": {
+            "install-path": "vendor/laravel/cashier",
+            "installer": "composer"
+        },
         "laravel/framework": {
             "install-path": "vendor/laravel/framework",
             "installer": "composer"
@@ -207,6 +215,10 @@
         },
         "paragonie/random_compat": {
             "install-path": "vendor/paragonie/random_compat",
+            "installer": "composer"
+        },
+        "phenx/php-font-lib": {
+            "install-path": "vendor/phenx/php-font-lib",
             "installer": "composer"
         },
         "php-http/discovery": {
@@ -359,6 +371,10 @@
         },
         "socialiteproviders/manager": {
             "install-path": "vendor/socialiteproviders/manager",
+            "installer": "composer"
+        },
+        "stripe/stripe-php": {
+            "install-path": "vendor/stripe/stripe-php",
             "installer": "composer"
         },
         "swiftmailer/swiftmailer": {

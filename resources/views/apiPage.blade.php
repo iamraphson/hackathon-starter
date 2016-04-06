@@ -65,6 +65,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4">
+                <a href="/api/stripe" style="color: #fff">
+                    <div style="background-color: #3da8e5" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/w3s2RvW.png" height="40"> Stripe</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection

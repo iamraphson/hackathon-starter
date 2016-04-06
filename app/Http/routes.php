@@ -101,6 +101,10 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'NewYorkTimesController@index'
         ]);
+        Route::get('/stripe', [
+            'middleware' => ['auth'],
+            'uses' => 'StripeController@index'
+        ]);
     });
 
     Route::post('newtweet/send',[
