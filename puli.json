@@ -66,6 +66,10 @@
             "install-path": "vendor/dompdf/dompdf",
             "installer": "composer"
         },
+        "fabpot/goutte": {
+            "install-path": "vendor/fabpot/goutte",
+            "installer": "composer"
+        },
         "facebook/php-sdk-v4": {
             "install-path": "vendor/facebook/php-sdk-v4",
             "installer": "composer"
@@ -393,14 +397,17 @@
             "install-path": "vendor/swiftmailer/swiftmailer",
             "installer": "composer"
         },
+        "symfony/browser-kit": {
+            "install-path": "vendor/symfony/browser-kit",
+            "installer": "composer"
+        },
         "symfony/console": {
             "install-path": "vendor/symfony/console",
             "installer": "composer"
         },
         "symfony/css-selector": {
             "install-path": "vendor/symfony/css-selector",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "symfony/debug": {
             "install-path": "vendor/symfony/debug",
@@ -408,8 +415,7 @@
         },
         "symfony/dom-crawler": {
             "install-path": "vendor/symfony/dom-crawler",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "symfony/event-dispatcher": {
             "install-path": "vendor/symfony/event-dispatcher",

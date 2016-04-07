@@ -129,6 +129,14 @@ Route::group(['middleware' => 'web'], function () {
             'middleware' => ['auth'],
             'uses' => 'TumblrController@index'
         ]);
+
+        Route::get('/scraping', [
+            'middleware' => ['auth'],
+            'uses' => 'ScarpingController@index'
+        ]);
+
+
+
     });
 
     Route::post('newtweet/send',[

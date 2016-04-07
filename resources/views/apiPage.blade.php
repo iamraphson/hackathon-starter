@@ -88,6 +88,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4">
+                <a href="/api/scraping" style="color: #fff">
+                    <div style="background-color: #ff6500" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/RGCVvyR.png" height="40"> Web Scraping</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection
