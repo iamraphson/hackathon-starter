@@ -200,6 +200,10 @@
             "install-path": "vendor/league/oauth2-instagram",
             "installer": "composer"
         },
+        "mjerwin/clockwork-sms": {
+            "install-path": "vendor/mjerwin/clockwork-sms",
+            "installer": "composer"
+        },
         "mockery/mockery": {
             "install-path": "vendor/mockery/mockery",
             "installer": "composer",
@@ -235,6 +239,10 @@
         },
         "phenx/php-font-lib": {
             "install-path": "vendor/phenx/php-font-lib",
+            "installer": "composer"
+        },
+        "php-curl-class/php-curl-class": {
+            "install-path": "vendor/php-curl-class/php-curl-class",
             "installer": "composer"
         },
         "php-http/discovery": {

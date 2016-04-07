@@ -135,6 +135,16 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'ScarpingController@index'
         ]);
 
+        Route::get('/clockwork', [
+            'middleware' => ['auth'],
+            'uses' => 'ClockworkController@index'
+        ]);
+
+        Route::post('/clockwork', [
+            'middleware' => ['auth'],
+            'uses' => 'ClockworkController@sendMessage'
+        ]);
+
 
 
     });

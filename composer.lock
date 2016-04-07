@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3761ec98ece4be59885ad4547c6d65e0",
-    "content-hash": "0ea9370aaea6afeb3f394d87530db664",
+    "hash": "5ad45d8986851066f879d413ca3fd07f",
+    "content-hash": "393300ff8fbe0771149886b23ec70679",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2597,6 +2597,38 @@
             "time": "2015-11-23 21:19:29"
         },
         {
+            "name": "mjerwin/clockwork-sms",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mjerwin/clockwork-sms.git",
+                "reference": "8220e1f679686dd1f81a8182b0beffbd1dee9df2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mjerwin/clockwork-sms/zipball/8220e1f679686dd1f81a8182b0beffbd1dee9df2",
+                "reference": "8220e1f679686dd1f81a8182b0beffbd1dee9df2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "php-curl-class/php-curl-class": "2.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MJErwin\\Clockwork": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP wrapper for Clockwork SMS API",
+            "homepage": "https://github.com/mjerwin/clockwork-sms",
+            "time": "2014-12-03 22:11:58"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.18.2",
             "source": {
@@ -2988,6 +3020,46 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "time": "2014-02-01 15:22:28"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "4bb926c8317010d3b59ca051cba6a4e5dc825e7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/4bb926c8317010d3b59ca051cba6a4e5dc825e7a",
+                "reference": "4bb926c8317010d3b59ca051cba6a4e5dc825e7a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "description": "PHP Curl Class is an object-oriented wrapper of the PHP cURL extension.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "class",
+                "curl",
+                "php"
+            ],
+            "time": "2014-12-18 18:22:32"
         },
         {
             "name": "php-http/discovery",
