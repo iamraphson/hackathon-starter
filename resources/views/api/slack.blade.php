@@ -23,28 +23,28 @@
             <h3> Get All Users On Your Team (RED-CREEK)</h3>
             <table class="table table-striped table-bordered">
                 <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Picture</th>
-                    <th>Full Name</th>
-                    <th>Slack Handle</th>
-                </tr>
+                    <tr>
+                        <th>No</th>
+                        <th>Picture</th>
+                        <th>Full Name</th>
+                        <th>Slack Handle</th>
+                    </tr>
                 </thead>
                 <tbody>
+                <?php $count = 1 ?>
                 @foreach($team as $member)
                     <tr>
-                        <td>1</td>
+                        <td>{{ $count }}</td>
                         <td><img src="{!!  $member->profile->image_72 !!}"></td>
                         <td>{{ $member->profile->real_name  }}</td>
                         <td>{{ $member->name }}</td>
                     </tr>
+                    <?php $count++ ?>
                 @endforeach
                 </tbody>
             </table>
-
             <br>
             <h3> Send Message to a Slack Channel Or Group</h3>
-
             <div class="row">
                 <div class="col-sm-6">
                     <form role="form" method="POST" action="{{ url('/api/slack/sendmessage') }}">
