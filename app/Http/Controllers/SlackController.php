@@ -19,7 +19,7 @@ class SlackController extends Controller{
             'message'     => 'required'
         ]);
 
-        $msg = $request->input('message') . " #HackathonStarterEV :wink:";
+        $msg = $request->input('message') . " #HackathonStarterEV :wink: ";
 
         SlackChat::message('#general', $msg);
 

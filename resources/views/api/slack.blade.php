@@ -20,7 +20,7 @@
             </div>
             <br/>
 
-            <h3> Get All Users On Your Team (RED-CREEK)</h3>
+            <h3> Get All Users On My Team (<i>red-creek.slack.com</i>)</h3>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -44,7 +44,7 @@
                 </tbody>
             </table>
             <br>
-            <h3> Send Message to a Slack Channel Or Group</h3>
+            <h3> Send Message to a Slack Channel Or Group(<i>red-creek.slack.com</i>)</h3>
             <div class="row">
                 <div class="col-sm-6">
                     <form role="form" method="POST" action="{{ url('/api/slack/sendmessage') }}">
