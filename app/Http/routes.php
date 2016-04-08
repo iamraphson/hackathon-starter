@@ -150,7 +150,15 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'LobController@index'
         ]);
 
+        Route::get('/twilio', [
+            'middleware' => ['auth'],
+            'uses' => 'TwilioController@index'
+        ]);
 
+        Route::post('/twilio', [
+            'middleware' => ['auth'],
+            'uses' => 'TwilioController@sendMessage'
+        ]);
 
 
     });

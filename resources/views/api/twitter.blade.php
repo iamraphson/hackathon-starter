@@ -4,6 +4,8 @@
     <div class="container">
         <div class="main-container">
 
+            @include('layouts.alert')
+
             <div class="page-header">
                 <h3><i style="color: #4099ff" class="fa fa-twitter"></i> Twitter API</h3>
             </div>

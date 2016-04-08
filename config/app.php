@@ -160,7 +160,8 @@ return [
         SocialiteProviders\Manager\ServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
-        Netshell\Paypal\PaypalServiceProvider::class
+        Netshell\Paypal\PaypalServiceProvider::class,
+        Aloha\Twilio\Support\Laravel\ServiceProvider::class
         //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
@@ -212,7 +213,8 @@ return [
         'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'GitHub' => GrahamCampbell\GitHub\Facades\GitHub::class,
-        'Paypal' => Netshell\Paypal\Facades\Paypal::class
+        'Paypal' => Netshell\Paypal\Facades\Paypal::class,
+        'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
 
     ],
 

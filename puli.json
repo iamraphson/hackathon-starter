@@ -5,6 +5,10 @@
         "bootstrap-file": "vendor/autoload.php"
     },
     "packages": {
+        "aloha/twilio": {
+            "install-path": "vendor/aloha/twilio",
+            "installer": "composer"
+        },
         "classpreloader/classpreloader": {
             "install-path": "vendor/classpreloader/classpreloader",
             "installer": "composer"
@@ -488,6 +492,10 @@
         },
         "thujohn/twitter": {
             "install-path": "vendor/thujohn/twitter",
+            "installer": "composer"
+        },
+        "twilio/sdk": {
+            "install-path": "vendor/twilio/sdk",
             "installer": "composer"
         },
         "vinkla/facebook": {
