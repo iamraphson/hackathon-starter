@@ -145,6 +145,12 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'ClockworkController@sendMessage'
         ]);
 
+        Route::get('/lob', [
+            'middleware' => ['auth'],
+            'uses' => 'LobController@index'
+        ]);
+
+
 
 
     });

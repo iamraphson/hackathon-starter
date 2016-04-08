@@ -200,6 +200,10 @@
             "install-path": "vendor/league/oauth2-instagram",
             "installer": "composer"
         },
+        "lob/lob-php": {
+            "install-path": "vendor/lob/lob-php",
+            "installer": "composer"
+        },
         "mjerwin/clockwork-sms": {
             "install-path": "vendor/mjerwin/clockwork-sms",
             "installer": "composer"
