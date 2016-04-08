@@ -43,7 +43,6 @@
             </table>
 
             <br>
-
             <h3> Send Message to a Slack Channel Or Group</h3>
 
             <div class="row">
@@ -63,7 +62,6 @@
                     </form>
                 </div>
             </div>
-
             <br>
         </div>
     </div>
