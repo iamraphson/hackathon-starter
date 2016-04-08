@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6ab4a8eb6b1099d1472384692b3cfd4",
-    "content-hash": "e802440ff6292780bd418ea7cf99ad12",
+    "hash": "7fb6d3cd2ad7d952e907c4644c0236d9",
+    "content-hash": "fb9e78131ce5d6fd7dd6bee92bb3344c",
     "packages": [
         {
             "name": "aloha/twilio",
@@ -5540,6 +5540,53 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "vluzrmos/slack-api",
+            "version": "v0.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vluzrmos/laravel-slack-api.git",
+                "reference": "b445341528ca4edc612889cf0946ed0bb4d177ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vluzrmos/laravel-slack-api/zipball/b445341528ca4edc612889cf0946ed0bb4d177ec",
+                "reference": "b445341528ca4edc612889cf0946ed0bb4d177ec",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.3|~6.0",
+                "illuminate/cache": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vluzrmos\\": "src/Vluzrmos/"
+                },
+                "files": [
+                    "src/Vluzrmos/SlackApi/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "DBAD"
+            ],
+            "authors": [
+                {
+                    "name": "Vagner do Carmo",
+                    "email": "vluzrmos@gmail.com"
+                }
+            ],
+            "description": "Wrapper for Slack.com WEB API.",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "slack"
+            ],
+            "time": "2016-02-06 18:57:41"
         },
         {
             "name": "webmozart/assert",

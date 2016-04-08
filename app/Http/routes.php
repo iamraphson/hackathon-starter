@@ -160,6 +160,15 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'TwilioController@sendMessage'
         ]);
 
+        Route::get('/slack', [
+            'middleware' => ['auth'],
+            'uses' => 'SlackController@index'
+        ]);
+
+        Route::post('/slack/sendmessage', [
+            'middleware' => ['auth'],
+            'uses' => 'SlackController@sendMessage'
+        ]);
 
     });
 

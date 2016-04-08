@@ -5,10 +5,11 @@ php:
   - 7.0
   - hhvm
 
-install: travis_retry composer install --no-interaction --prefer-source
+before_script:
+  - composer install --prefer-source --no-interaction
 
 script:
-  - phpunit --coverage-text --coverage-clover=coverage.clover
+  - phpunit
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

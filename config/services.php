@@ -75,6 +75,9 @@ return [
         'client_id'     => env('FOURSQUARE_ID'),
         'client_secret' => env('FOURSQUARE_SECRET'),
         'redirect'      => env('FOURSQUARE_CALLBACK_URL')
+    ],
+    'slack' => [
+        'token' => env('SLACK_TOKEN')
     ]
 
 ];

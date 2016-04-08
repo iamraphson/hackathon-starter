@@ -510,6 +510,10 @@
             "install-path": "vendor/vlucas/phpdotenv",
             "installer": "composer"
         },
+        "vluzrmos/slack-api": {
+            "install-path": "vendor/vluzrmos/slack-api",
+            "installer": "composer"
+        },
         "webmozart/assert": {
             "install-path": "vendor/webmozart/assert",
             "installer": "composer"

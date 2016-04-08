@@ -161,7 +161,8 @@ return [
         JD\Cloudder\CloudderServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
         Netshell\Paypal\PaypalServiceProvider::class,
-        Aloha\Twilio\Support\Laravel\ServiceProvider::class
+        Aloha\Twilio\Support\Laravel\ServiceProvider::class,
+        Vluzrmos\SlackApi\SlackApiServiceProvider::class
         //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
@@ -215,7 +216,18 @@ return [
         'GitHub' => GrahamCampbell\GitHub\Facades\GitHub::class,
         'Paypal' => Netshell\Paypal\Facades\Paypal::class,
         'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
-
+        'SlackApi' => Vluzrmos\SlackApi\Facades\SlackApi::class,
+        'SlackChannel' => Vluzrmos\SlackApi\Facades\SlackChannel::class,
+        'SlackChat' => Vluzrmos\SlackApi\Facades\SlackChat::class,
+        'SlackGroup' => Vluzrmos\SlackApi\Facades\SlackGroup::class,
+        'SlackFile' => Vluzrmos\SlackApi\Facades\SlackFile::class,
+        'SlackSearch' => Vluzrmos\SlackApi\Facades\SlackSearch::class,
+        'SlackInstantMessage' => Vluzrmos\SlackApi\Facades\SlackInstantMessage::class,
+        'SlackUser' => Vluzrmos\SlackApi\Facades\SlackUser::class,
+        'SlackStar'  => Vluzrmos\SlackApi\Facades\SlackStar::class,
+        'SlackUserAdmin' => Vluzrmos\SlackApi\Facades\SlackUserAdmin::class,
+        'SlackRealTimeMessage' => Vluzrmos\SlackApi\Facades\SlackRealTimeMessage::class,
+        'SlackTeam' => Vluzrmos\SlackApi\Facades\SlackTeam::class,
     ],
 
 ];
