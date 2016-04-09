@@ -17,7 +17,7 @@ class PinterestController extends Controller{
     }
 
     public function index(Request $request){
-        if(!$this->isSecure()){
+        if(isSecure()){
             return view('api.pinterest')->with('notSecure', true);
         }
 
@@ -62,9 +62,4 @@ class PinterestController extends Controller{
         return redirect()->back()->with('info', 'Your Pin has been sent successfully');
     }
 
-    private function isSecure() {
-        return
-            (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
-            || $_SERVER['SERVER_PORT'] == 443;
-    }
 }
