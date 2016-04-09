@@ -125,6 +125,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4">
+                <a href="/api/pinterest" style="color: #fff">
+                    <div style="background-color: #bd081c" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/JNNRQSm.png" height="40"> Pinterest</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 @endsection

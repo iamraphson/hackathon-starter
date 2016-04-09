@@ -38,7 +38,7 @@ class TwitterController extends Controller{
 
         $tweet = $request->input('tweet') . " #LaravelHackthonv2.0";
         Twitter::postTweet(['status' => $tweet, 'format' => 'json']);
-        return redirect()->back();
+        return redirect()->back()->with('info', 'Your Message has been sent successfully');
     }
     private function getTwitterToken(){
         return UserProfile::whereProvider('twitter')->where('user_id', '=', Auth::user()->id)->first();

@@ -32,7 +32,9 @@
         "mjerwin/clockwork-sms": "^0.9.1",
         "lob/lob-php": "^1.6",
         "aloha/twilio": "^2.0",
-        "vluzrmos/slack-api": "^0.4.6"
+        "vluzrmos/slack-api": "^0.4.6",
+        "socialiteproviders/pinterest": "^1.0",
+        "dirkgroenen/Pinterest-API-PHP": "^0.2.10"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -76,6 +76,11 @@ return [
         'client_secret' => env('FOURSQUARE_SECRET'),
         'redirect'      => env('FOURSQUARE_CALLBACK_URL')
     ],
+    'pinterest' => [
+        'client_id' => env('PINTEREST_ID'),
+        'client_secret' => env('PINTEREST_SECRET'),
+        'redirect' => env('PINTEREST_CALLBACK_URL'),
+    ],
     'slack' => [
         'token' => env('SLACK_TOKEN')
     ]

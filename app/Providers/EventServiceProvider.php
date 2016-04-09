@@ -20,6 +20,7 @@ class EventServiceProvider extends ServiceProvider
             // add your listeners (aka providers) here
             'SocialiteProviders\Instagram\InstagramExtendSocialite@handle',
             'SocialiteProviders\Foursquare\FoursquareExtendSocialite@handle',
+            'SocialiteProviders\Pinterest\PinterestExtendSocialite@handle',
         ],
     ];
 

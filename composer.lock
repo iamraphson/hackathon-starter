@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fb6d3cd2ad7d952e907c4644c0236d9",
-    "content-hash": "fb9e78131ce5d6fd7dd6bee92bb3344c",
+    "hash": "a4c50f1a7da5488ffc1cd13c1b4ce3db",
+    "content-hash": "2032ad4aa92e4bbcd3ec3b0fc815a3ef",
     "packages": [
         {
             "name": "aloha/twilio",
@@ -293,6 +293,53 @@
                 "wrapper"
             ],
             "time": "2015-08-24 17:05:19"
+        },
+        {
+            "name": "dirkgroenen/pinterest-api-php",
+            "version": "0.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirkgroenen/Pinterest-API-PHP.git",
+                "reference": "ac02f6617f5eeab9c2485e11e7ad5cb76f908cb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirkgroenen/Pinterest-API-PHP/zipball/ac02f6617f5eeab9c2485e11e7ad5cb76f908cb8",
+                "reference": "ac02f6617f5eeab9c2485e11e7ad5cb76f908cb8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*",
+                "vlucas/phpdotenv": "^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DirkGroenen\\Pinterest\\": "src/Pinterest"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dirk Groenen",
+                    "email": "dirk@bitlabs.nl",
+                    "homepage": "http://dirkgroenen.nl",
+                    "role": "Creator/Developer"
+                }
+            ],
+            "description": "PHP Wrapper for the official Pinterest API",
+            "keywords": [
+                "api",
+                "pinterest",
+                "wrapper"
+            ],
+            "time": "2016-02-11 09:41:40"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4137,6 +4184,43 @@
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
             "time": "2016-02-20 22:18:54"
+        },
+        {
+            "name": "socialiteproviders/pinterest",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Pinterest.git",
+                "reference": "da7620501ed67443c7cdfd3e15ecb43280e71c9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Pinterest/zipball/da7620501ed67443c7cdfd3e15ecb43280e71c9c",
+                "reference": "da7620501ed67443c7cdfd3e15ecb43280e71c9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "socialiteproviders/manager": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Pinterest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael TOURNAUD",
+                    "email": "ollibrius@gmail.com"
+                }
+            ],
+            "description": "Pinterest OAuth2 Provider for Laravel Socialite",
+            "time": "2016-03-02 15:36:43"
         },
         {
             "name": "stripe/stripe-php",

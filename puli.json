@@ -29,6 +29,10 @@
             "install-path": "vendor/dandelionmood/lastfm",
             "installer": "composer"
         },
+        "dirkgroenen/pinterest-api-php": {
+            "install-path": "vendor/dirkgroenen/pinterest-api-php",
+            "installer": "composer"
+        },
         "dnoegel/php-xdg-base-dir": {
             "install-path": "vendor/dnoegel/php-xdg-base-dir",
             "installer": "composer"
@@ -403,6 +407,10 @@
         },
         "socialiteproviders/manager": {
             "install-path": "vendor/socialiteproviders/manager",
+            "installer": "composer"
+        },
+        "socialiteproviders/pinterest": {
+            "install-path": "vendor/socialiteproviders/pinterest",
             "installer": "composer"
         },
         "stripe/stripe-php": {

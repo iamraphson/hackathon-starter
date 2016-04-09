@@ -170,6 +170,16 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'SlackController@sendMessage'
         ]);
 
+        Route::get('/pinterest', [
+            'middleware' => ['auth'],
+            'uses' => 'PinterestController@index'
+        ]);
+
+        Route::post('/pinterest/pin/new', [
+            'middleware' => ['auth'],
+            'uses' => 'PinterestController@postPin'
+        ]);
+
     });
 
     Route::post('newtweet/send',[
