@@ -9,7 +9,8 @@ use App\Http\Requests;
 
 class ClockworkController extends Controller{
 
-    protected $client, $message;
+    protected $client;
+    protected $message;
 
     public function __construct(){
         $this->client = new ClockworkClient(env('CLOCKWORK_ID'));

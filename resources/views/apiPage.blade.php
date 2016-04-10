@@ -132,6 +132,14 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4">
+                <a href="/api/upload" style="color: #1565c0">
+                    <div style="background-color: #fff" class="panel panel-default">
+                        <div class="panel-body"><img src="http://i.imgur.com/UPTzIdC.png" height="40"> File Upload</div>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
 @endsection
