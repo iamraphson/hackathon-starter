@@ -41,8 +41,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                <a href="{{ url('/') }}" class="navbar-brand">
+                    <i class="fa fa-cube"></i> Project name
                 </a>
             </div>
 
