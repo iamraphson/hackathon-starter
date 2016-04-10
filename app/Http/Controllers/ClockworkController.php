@@ -25,8 +25,9 @@ class ClockworkController extends Controller{
             'telephone'     => 'required|numeric'
         ]);
 
-        $this->message->setNumber($request->input('telephone'));
-        $this->message->setContent('Testing Clockwork SMS #HackathonStarter');
+        $number = $request->input('telephone');
+        $this->message->setNumber($number);
+        $this->message->setContent('Testing Clockwork SMS #HackathonStarterEV');
 
         $this->client->sendMessage($this->message);
         return redirect()->back()->with('info','Your Message has been sent successfully');
