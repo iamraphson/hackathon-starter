@@ -14,6 +14,12 @@ class UserProfile extends Model{
     protected $table = 'users_profile';
 
     /**
+     * The primary key for the model.
+     *
+     * @var string
+     */
+    protected $primaryKey = 'user_id';
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
