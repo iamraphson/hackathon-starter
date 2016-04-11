@@ -180,6 +180,16 @@ Route::group(['middleware' => 'web'], function () {
             'uses' => 'PinterestController@postPin'
         ]);
 
+        Route::get('/upload', [
+            'middleware' => ['auth'],
+            'uses' => 'UploadController@index'
+        ]);
+
+        Route::post('/upload/apply', [
+            'middleware' => ['auth'],
+            'uses' => 'UploadController@upload'
+        ]);
+
     });
 
     Route::post('newtweet/send',[
