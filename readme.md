@@ -355,8 +355,11 @@ List of Packages
 | facebook                         | Facebook API library                                                   |
 | instagram                         | Instagram API library                                                   |
 | linkedin                         | Linkedli API library                                                   |
+| Pinterest-API-PHP                         | Pinterest API library                                                   |
+| lob-php                         | LOB API library                                                   |
 | twilio                          | Twilio API library                                                    |
 | lob-php                         | Lob API library                                                       |
+| tumblr                         | Tumblr library                                                       |
 | lastfm-api-wrapper              | Lastfm API library                                                    |
 | guzzlehttp                      | Simplified HTTP Request library                                       |
 
@@ -382,6 +385,14 @@ Recommended Design Resources
 - [Medium Scroll Effect](http://codepen.io/andreasstorm/pen/pyjEh) - Fade in/out header background image as you scroll.
 - [GeoPattern](https://github.com/btmills/geopattern) - SVG background pattern generator.
 - [Trianglify](https://github.com/qrohlf/trianglify) - SVG low-poly background pattern generator.
+
+
+Recommended Laravel Libraries
+-----------------------------
+
+- [laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) - Associated media files with your Eloquent models easily.
+- [laravel-emoji](https://github.com/unicodeveloper/laravel-emoji) - For using emojis in your app
+- [laravel-quotes](https://github.com/unicodeveloper/laravel-quotes) - For using all sorts of quotes especially DJKHALED in your app
 
 
 FAQ
@@ -616,7 +627,7 @@ Also, be sure to check out the [Jump-start your hackathon efforts with DevOps Se
 
 ## Contributing
 
-Thank you for considering contributing to Hackathon Starter. The contribution guide can be found in the [Contribution File](CONTRIBUTING.md)
+Thank you for considering contributing to Hackathon Starter.
 
 ## Security Vulnerabilities
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests;
+use Illuminate\Http\Response;
 
 class UploadController extends Controller{
 

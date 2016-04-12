@@ -102,7 +102,8 @@ class AuthController extends Controller
         } else {
             $authUser = $this->findOrCreateUser($user, $provider);
             Auth::login($authUser);
-            return view('welcome');
+
+            return redirect('/');
         }
 
     }
