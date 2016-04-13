@@ -50,13 +50,14 @@ Route::get('mypage', function(){
 
 Route::group(['middleware' => 'web'], function () {
 
-    Route::get('/', function(){
+    /*Route::get('/', function(){
         return view('welcome');
-    });
+    });*/
 
-    Route::get('/home', [
+    Route::get('/', [
         'uses' => 'HomeController@index'
     ]);
+
     Route::group(['prefix' => '/api'], function () {
         Route::get('/', function(){
             return view('apiPage');

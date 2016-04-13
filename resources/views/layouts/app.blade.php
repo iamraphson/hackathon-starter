@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
         body {
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">HOME</a></li>
+                    <li><a href="{{ url('/') }}">HOME</a></li>
                     <li><a href="{{ url('/api') }}">API EXAMPLES</a></li>
                     <li><a href="{{ url('/contact') }}">CONTACT</a></li>
                 </ul>
@@ -79,6 +79,16 @@
     </nav>
 
     @yield('content')
+
+    <footer>
+        <div class="container text-center">
+            <p class="pull-left">© {{ date('Y') }} Company, Inc. All Rights Reserved</p>
+            <ul class="pull-right list-inline">
+                <li><a href="https://github.com/iamraphson">GitHub Project</a></li>
+                <li><a href="https://github.com/iamraphson/hackathon-starter/issues">Issues</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

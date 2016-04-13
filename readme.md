@@ -1,4 +1,4 @@
-![](https://cloud.githubusercontent.com/assets/3502724/14440601/918bd7c8-0028-11e6-87ed-4d5ca6089e0e.jpg)
+![](https://cloud.githubusercontent.com/assets/3502724/14492020/53c78f2a-0174-11e6-919f-bbfa2d5943dc.jpg)
 **Live Demo**: http://hackathon-starter-extended.herokuapp.com
 
 A boilerplate for **Laravel** web applications.
