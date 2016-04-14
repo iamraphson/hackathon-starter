@@ -82,7 +82,7 @@
 
     <footer>
         <div class="container text-center">
-            <p class="pull-left">© {{ date('Y') }} Company, Inc. All Rights Reserved</p>
+            <p class="pull-left">&copy; {{ date('Y') }} Company, Inc. All Rights Reserved</p>
             <ul class="pull-right list-inline">
                 <li><a href="https://github.com/iamraphson">GitHub Project</a></li>
                 <li><a href="https://github.com/iamraphson/hackathon-starter/issues">Issues</a></li>

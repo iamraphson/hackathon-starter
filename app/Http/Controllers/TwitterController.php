@@ -12,7 +12,7 @@ class TwitterController extends Controller{
 
     private $searchItem;
     public function __construct(){
-        $this->searchItem = "Laravel";
+        $this->searchItem = "#php";
     }
 
     public function index(Request $request){
@@ -36,7 +36,7 @@ class TwitterController extends Controller{
             'tweet'     => 'required'
         ]);
 
-        $tweet = $request->input('tweet') . " #LaravelHackthonv2.0";
+        $tweet = $request->input('tweet') . " #LaravelHackthon";
         Twitter::postTweet(['status' => $tweet, 'format' => 'json']);
         return redirect()->back()->with('info', 'Your Message has been sent successfully');
     }
