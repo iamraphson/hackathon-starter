@@ -9,6 +9,10 @@
             "install-path": "vendor/aloha/twilio",
             "installer": "composer"
         },
+        "busayo/laravel-yearly": {
+            "install-path": "vendor/busayo/laravel-yearly",
+            "installer": "composer"
+        },
         "classpreloader/classpreloader": {
             "install-path": "vendor/classpreloader/classpreloader",
             "installer": "composer"

@@ -148,6 +148,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Application Service Providers...
          */
@@ -162,7 +163,8 @@ return [
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
         Netshell\Paypal\PaypalServiceProvider::class,
         Aloha\Twilio\Support\Laravel\ServiceProvider::class,
-        Vluzrmos\SlackApi\SlackApiServiceProvider::class
+        Vluzrmos\SlackApi\SlackApiServiceProvider::class,
+        Unicodeveloper\Yearly\YearlyServiceProvider::class,
         //Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
@@ -228,6 +230,7 @@ return [
         'SlackUserAdmin' => Vluzrmos\SlackApi\Facades\SlackUserAdmin::class,
         'SlackRealTimeMessage' => Vluzrmos\SlackApi\Facades\SlackRealTimeMessage::class,
         'SlackTeam' => Vluzrmos\SlackApi\Facades\SlackTeam::class,
+        'Yearly' => Unicodeveloper\Yearly\YearlyFacade::class,
     ],
 
 ];

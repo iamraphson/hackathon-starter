@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a4c50f1a7da5488ffc1cd13c1b4ce3db",
-    "content-hash": "2032ad4aa92e4bbcd3ec3b0fc815a3ef",
+    "hash": "afc8d463d68568ee57a0ba9223de7a7e",
+    "content-hash": "fdef15ce1d8db52c6ee734006a93c56d",
     "packages": [
         {
             "name": "aloha/twilio",
@@ -60,6 +60,66 @@
                 "twilio"
             ],
             "time": "2015-07-17 16:39:36"
+        },
+        {
+            "name": "busayo/laravel-yearly",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unicodeveloper/laravel-yearly.git",
+                "reference": "82dcd6264edff30954fc0417e51749560ed3ffbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unicodeveloper/laravel-yearly/zipball/82dcd6264edff30954fc0417e51749560ed3ffbc",
+                "reference": "82dcd6264edff30954fc0417e51749560ed3ffbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Unicodeveloper\\Yearly\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "busayo",
+                    "email": "prosperotemuyiwa@gmail.com",
+                    "homepage": "http://goodheads.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides helper function to get the current year and a range of years",
+            "homepage": "https://github.com/busayo/laravel-yearly",
+            "keywords": [
+                "Year",
+                "busayo",
+                "copyright",
+                "footer",
+                "laravel",
+                "laravel-yearly",
+                "yearAfteryear"
+            ],
+            "time": "2015-10-24 23:32:19"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -2966,7 +3026,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/net-shell/laravel-paypal/zipball/5ae43645f78a26c6dc06f48478952abca21026e4",
+                "url": "https://api.github.com/repos/net-shell/laravel-paypal/zipball/232b84f5cbfea35bfe3b89017288134786cb5d39",
                 "reference": "5ae43645f78a26c6dc06f48478952abca21026e4",
                 "shasum": ""
             },
