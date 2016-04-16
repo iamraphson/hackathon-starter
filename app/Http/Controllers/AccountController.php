@@ -9,6 +9,8 @@ use Session;
 use App\Http\Requests;
 use App\User;
 use App\UserProfile;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class AccountController extends Controller{
 
@@ -67,18 +69,49 @@ class AccountController extends Controller{
             'file_name'     => 'required|mimes:jpg,jpeg,bmp,png|between:1,7000',
         ]);
 
-        $file = $request->file('file_name')->getRealPath();
+        /*
+         * API implementation for Cloudder..
+         */
+        /*
+            $file = $request->file('file_name')->getRealPath();
+            Cloudder::upload($file, null);
+            list($width, $height) = getimagesize($file);
+            $fileUrl = Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height" => $height]);
+        */
+        /*
+         * End of cloudder api implementation.
+         */
 
-        Cloudder::upload($file, null);
-        list($width, $height) = getimagesize($file);
-        $fileUrl = Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height" => $height]);
+
+
+        /*
+         * Local Storage imeplementation
+         */
+
+        $file = $request->file('file_name');
+
+        $fileName =  time() . rand(0, 9999) . "/" . $request->file('file_name')->getClientOriginalName();
+
+        Storage::put($fileName,  File::get($file));//store image in local storage
+
+        $fileUrl = url('img/' . $fileName);//generate image url
+
+
+        /*
+         * End of local storage implementation.
+         */
+
 
         //store File URL to DB
+        $this->saveUpload($fileUrl);
+
+        return redirect()->back()->with('info', 'Photo has been updated successfully');
+    }
+
+    public function saveUpload($fileUrl){
         $user = User::find($this->loginId);
         $user->avatar = $fileUrl;
         $user->save();
-
-        return redirect()->back()->with('info', 'Photo has been updated successfully');
     }
 
     public function unlinkSocialMediaAccount($provider){

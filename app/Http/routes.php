@@ -193,6 +193,10 @@ Route::group(['middleware' => 'web'], function () {
 
     });
 
+    Route::get('/img/{file}', [
+        'uses' => 'FileController@showImg'
+    ])->where('file', '(.*)');
+
     Route::post('newtweet/send',[
         'middleware' => ['auth'],
         'uses' => 'TwitterController@sendTweet'

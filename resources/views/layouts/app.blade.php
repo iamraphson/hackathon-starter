@@ -80,7 +80,7 @@
 
     @yield('content')
 
-    <footer>
+    {{--<footer>
         <div class="container text-center">
             <p class="pull-left">&copy; {{ Yearly::current_year()  }} Company, Inc. All Rights Reserved</p>
             <ul class="pull-right list-inline">
@@ -88,7 +88,7 @@
                 <li><a href="https://github.com/iamraphson/hackathon-starter/issues">Issues</a></li>
             </ul>
         </div>
-    </footer>
+    </footer>--}}
 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
