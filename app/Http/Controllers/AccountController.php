@@ -90,7 +90,7 @@ class AccountController extends Controller{
 
         $file = $request->file('file_name');
 
-        $fileName =  time() . rand(0, 9999) . "/" . $request->file('file_name')->getClientOriginalName();
+        $fileName =  time() . rand(0, 99999) . "/" . $request->file('file_name')->getClientOriginalName();
 
         Storage::put($fileName,  File::get($file));//store image in local storage
 

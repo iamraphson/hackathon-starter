@@ -79,12 +79,7 @@ class AuthController extends Controller
         if($request->has('redirect')){
             Session::put('oldPath', $request->input('redirect'));
         }
-
-        /*if($provider == "instagram")
-            return Socialite::with($provider)->scopes(['public_content', 'basic', 'follower_list', 'comments', 'relationships', 'likes'])->redirect();
-        else*/
-            return Socialite::with($provider)->redirect();
-
+        return Socialite::with($provider)->redirect();
     }
 
     public function handleProviderCallback($provider){
@@ -105,7 +100,6 @@ class AuthController extends Controller
 
             return redirect('/');
         }
-
     }
 
     private function updateUserProfile($userData, $provider){

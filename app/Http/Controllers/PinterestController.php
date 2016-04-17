@@ -64,6 +64,5 @@ class PinterestController extends Controller{
 
     private function isSecure() {
         return isSecure();
-
     }
 }
