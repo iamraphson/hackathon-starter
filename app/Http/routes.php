@@ -271,7 +271,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
     Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
-    Route::get('password/reset', 'Auth\PasswordController@getReset');
+    Route::post('password/reset', 'Auth\PasswordController@getReset');
 
 
     Route::get('/auth/{provider}', 'Auth\AuthController@redirectToProvider');
