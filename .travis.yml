@@ -10,7 +10,8 @@ php:
   - hhvm
 
 before_script:
-  - composer install --dev --prefer-source --no-interaction
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
 
-
-script: vendor/bin/phpspec run -fpretty -v
+script:
+  - vendor/bin/phpunit
