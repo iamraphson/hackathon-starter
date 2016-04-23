@@ -160,6 +160,21 @@
             "install-path": "vendor/jeremeamia/SuperClosure",
             "installer": "composer"
         },
+        "jms/metadata": {
+            "install-path": "vendor/jms/metadata",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "jms/parser-lib": {
+            "install-path": "vendor/jms/parser-lib",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "jms/serializer": {
+            "install-path": "vendor/jms/serializer",
+            "installer": "composer",
+            "env": "dev"
+        },
         "jrm2k6/cloudder": {
             "install-path": "vendor/jrm2k6/cloudder",
             "installer": "composer"
@@ -285,8 +300,18 @@
             "install-path": "vendor/php-http/promise",
             "installer": "composer"
         },
+        "phpcollection/phpcollection": {
+            "install-path": "vendor/phpcollection/phpcollection",
+            "installer": "composer",
+            "env": "dev"
+        },
         "phpdocumentor/reflection-docblock": {
             "install-path": "vendor/phpdocumentor/reflection-docblock",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "phpoption/phpoption": {
+            "install-path": "vendor/phpoption/phpoption",
             "installer": "composer",
             "env": "dev"
         },
@@ -362,6 +387,16 @@
             "install-path": "vendor/ramsey/uuid",
             "installer": "composer"
         },
+        "satooshi/php-coveralls": {
+            "install-path": "vendor/satooshi/php-coveralls",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "scrutinizer/ocular": {
+            "install-path": "vendor/scrutinizer/ocular",
+            "installer": "composer",
+            "env": "dev"
+        },
         "sebastian/comparator": {
             "install-path": "vendor/sebastian/comparator",
             "installer": "composer",
@@ -429,6 +464,11 @@
             "install-path": "vendor/symfony/browser-kit",
             "installer": "composer"
         },
+        "symfony/config": {
+            "install-path": "vendor/symfony/config",
+            "installer": "composer",
+            "env": "dev"
+        },
         "symfony/console": {
             "install-path": "vendor/symfony/console",
             "installer": "composer"
@@ -484,6 +524,11 @@
         "symfony/routing": {
             "install-path": "vendor/symfony/routing",
             "installer": "composer"
+        },
+        "symfony/stopwatch": {
+            "install-path": "vendor/symfony/stopwatch",
+            "installer": "composer",
+            "env": "dev"
         },
         "symfony/translation": {
             "install-path": "vendor/symfony/translation",
