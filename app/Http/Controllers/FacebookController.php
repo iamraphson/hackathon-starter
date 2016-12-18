@@ -11,12 +11,16 @@ use App\Http\Requests;
 
 class FacebookController extends Controller{
     public function index(Request $request){
-        $this->deleteFacebookToken();
         $tokenData = $this->getFacebookToken();
         if(!$tokenData){
             return redirect('auth/facebook?redirect=' . $request->path());
         } else {
-            $dataFromFacebook = json_decode($this->getData($tokenData)->getGraphUser(), true);
+            try {
+                $dataFromFacebook = json_decode($this->getData($tokenData)->getGraphUser(), true);
+            } catch (Exception $e) {
+                $this->deleteFacebookToken();
+                return redirect('auth/facebook?redirect=' . $request->path());
+            }
             return view('api.facebook')->with('details', $dataFromFacebook);
         }
 
