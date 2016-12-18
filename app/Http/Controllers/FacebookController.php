@@ -16,12 +16,7 @@ class FacebookController extends Controller{
         if(!$tokenData){
             return redirect('auth/facebook?redirect=' . $request->path());
         } else {
-            try {
-                $dataFromFacebook = json_decode($this->getData($tokenData)->getGraphUser(), true);
-            } catch (Exception $e) {
-                $this->deleteFacebookToken();
-                return redirect('auth/facebook?redirect=' . $request->path());
-            }
+            $dataFromFacebook = json_decode($this->getData($tokenData)->getGraphUser(), true);
             return view('api.facebook')->with('details', $dataFromFacebook);
         }
 
