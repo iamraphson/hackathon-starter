@@ -12,7 +12,7 @@ class NewYorkTimesController extends Controller{
     protected $client;
     protected  $response;
     public function __construct(){
-        $this->url = "http://api.nytimes.com/svc/books/v3/lists?list-name=young-adult&api-key=" . env('NEWYORKTIMES_BOOK_ID');
+        $this->url = "http://api.nytimes.com/svc/books/v2/lists?list-name=young-adult&api-key=" . env('NEWYORKTIMES_BOOK_ID');
         $this->client = new Client();
         $this->makeRequest();
     }
