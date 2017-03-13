@@ -84,7 +84,7 @@
         <div class="container text-center">
             <p class="pull-left">&copy; {{ Yearly::current_year()  }} Company, Inc. All Rights Reserved</p>
             <ul class="pull-right list-inline">
-                <li><a href="https://github.com/iamraphson">GitHub Project</a></li>
+                <li><a href="https://github.com/iamraphson/hackathon-starter">GitHub Project</a></li>
                 <li><a href="https://github.com/iamraphson/hackathon-starter/issues">Issues</a></li>
             </ul>
         </div>
