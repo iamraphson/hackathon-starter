@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.27",
-        "laravel/socialite": "^2.0",
+        "laravel/socialite": "2.0.21",
         "vinkla/facebook": "^2.0",
         "thujohn/twitter": "^2.1",
         "socialiteproviders/instagram": "^1.1",

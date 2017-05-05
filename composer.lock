@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "005a55291237a78d0dc31680856b521c",
-    "content-hash": "3902223e9fbb2d32852df0f37068afad",
+    "hash": "2ee6f4dad53faa870ec21c5dfc7a2e38",
+    "content-hash": "80b15fbafe5339de6ca035d8b59f2915",
     "packages": [
         {
             "name": "aloha/twilio",
@@ -998,12 +998,12 @@
             "version": "5.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/facebook-php-sdk-v4.git",
+                "url": "https://github.com/facebook/php-graph-sdk.git",
                 "reference": "2c42fb3002953355f12d3c6e8003a9fd5af563d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/facebook-php-sdk-v4/zipball/2c42fb3002953355f12d3c6e8003a9fd5af563d9",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2c42fb3002953355f12d3c6e8003a9fd5af563d9",
                 "reference": "2c42fb3002953355f12d3c6e8003a9fd5af563d9",
                 "shasum": ""
             },
@@ -1046,6 +1046,7 @@
                 "facebook",
                 "sdk"
             ],
+            "abandoned": "facebook/graph-sdk",
             "time": "2015-11-19 21:07:36"
         },
         {
@@ -1260,6 +1261,7 @@
                 "rest",
                 "web service"
             ],
+            "abandoned": "guzzlehttp/guzzle",
             "time": "2014-01-28 22:29:15"
         },
         {
@@ -2375,16 +2377,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v2.0.15",
+            "version": "v2.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "edd00ab96933e3ef053533cce81e958fb26921af"
+                "reference": "c4e4337e5b70149fdbefbb95b2c9e93d0749c413"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/edd00ab96933e3ef053533cce81e958fb26921af",
-                "reference": "edd00ab96933e3ef053533cce81e958fb26921af",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/c4e4337e5b70149fdbefbb95b2c9e93d0749c413",
+                "reference": "c4e4337e5b70149fdbefbb95b2c9e93d0749c413",
                 "shasum": ""
             },
             "require": {
@@ -2397,7 +2399,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.0|~5.0"
             },
             "type": "library",
             "extra": {
@@ -2425,7 +2427,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2016-03-21 14:30:30"
+            "time": "2017-03-27 21:32:28"
         },
         {
             "name": "league/container",
@@ -5525,12 +5527,12 @@
             "version": "2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vinkla/facebook.git",
+                "url": "https://github.com/vinkla/laravel-facebook.git",
                 "reference": "8d3afd010257abb7d539fa8ac914b9d460a18748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vinkla/facebook/zipball/8d3afd010257abb7d539fa8ac914b9d460a18748",
+                "url": "https://api.github.com/repos/vinkla/laravel-facebook/zipball/8d3afd010257abb7d539fa8ac914b9d460a18748",
                 "reference": "8d3afd010257abb7d539fa8ac914b9d460a18748",
                 "shasum": ""
             },
