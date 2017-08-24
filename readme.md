@@ -332,7 +332,7 @@ Project Structure
 | **controllers**/ClockworkController.php  | Controller for Clockwork API functionality                   |
 | **controllers**/ContactController.php    | Controller for Contact page                                  |
 | **controllers**/Controller.php           | BaseController                                               |
-| **controllers**/FacebookController.php     | Controller for Github API functionality                      |
+| **controllers**/FacebookController.php     | Controller for Facebook API functionality                      |
 | **controllers**/GithubController.php     | Controller for Github API functionality                      |
 | **controllers**/HomeController.php     | Controller for Home Page                      |
 | **controllers**/InstagramController.php     | Controller for Instagram API functionality                      |
