@@ -611,6 +611,7 @@ picks. From my experience, **Heroku** is the easiest to get started with,  deplo
 ### 1-Step Deployment with Heroku
 
 <img src="http://blog.exadel.com/wp-content/uploads/2013/10/heroku-Logo-1.jpg" width="200">
+
 - Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - In terminal, run `heroku login` and enter your Heroku credentials
 - From *your app* directory run `heroku create`
